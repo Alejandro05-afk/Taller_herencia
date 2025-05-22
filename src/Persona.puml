@@ -1,0 +1,101 @@
+@startuml
+
+class Persona {
+  + String cedula
+  + String nombre
+  + String direccion
+  + String correo
+  + String telefono
+
+  + void mostrarInformacionPersonal()
+}
+
+class Estudiante {
+  + String carrera
+  + String nivel
+
+  + void mostrarInformacionPersonal()
+  + int calcularEdad(int anioActual, int anioNacimiento)
+}
+
+class Docente {
+  + String facultadPertenece
+  + String horasAsignadaClases
+
+  + void mostrarInformacionPersonal()
+}
+
+class Estudiante_presencial {
+  + int hora_presenciales
+  + int horario
+
+  + void mostrarInformacionPersonal()
+}
+
+class Estudiante_virtual {
+  + String plataforma
+  + String tutor_virtual
+
+  + void mostrarInformacionPersonal()
+}
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+Estudiante <|-- Estudiante_presencial
+Estudiante <|-- Estudiante_virtual
+
+@enduml
+@startuml
+
+class Persona {
+  + String cedula
+  + String nombre
+  + String direccion
+  + String correo
+  + String telefono
+
+  + void mostrarInformacionPersonal()
+}
+
+class Estudiante {
+  + String carrera
+  + String nivel
+
+  + void mostrarInformacionPersonal()
+  + int calcularEdad(int anioActual, int anioNacimiento)
+}
+
+class Docente {
+  + String facultadPertenece
+  + String horasAsignadaClases
+
+  + void mostrarInformacionPersonal()
+}
+
+class Estudiante_presencial {
+  + int hora_presenciales
+  + int horario
+
+  + void mostrarInformacionPersonal()
+  + int calcularEdad(int anioActual, int anioNacimiento)
+}
+
+class Estudiante_virtual {
+  + String plataforma
+  + String tutor_virtual
+
+  + void mostrarInformacionPersonal()
+  + int calcularEdad(int anioActual, int anioNacimiento)
+}
+
+class Docente_linea {
+    + String tipo_contrato
+     + void mostrarInformacionPersonal()
+}
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+Estudiante <|-- Estudiante_presencial
+Estudiante <|-- Estudiante_virtual
+Persona <|-- Docente_linea
+@enduml

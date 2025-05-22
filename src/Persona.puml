@@ -97,5 +97,5 @@ Persona <|-- Estudiante
 Persona <|-- Docente
 Estudiante <|-- Estudiante_presencial
 Estudiante <|-- Estudiante_virtual
-Persona <|-- Docente_linea
+Docente <|-- Docente_linea
 @enduml

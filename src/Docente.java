@@ -7,6 +7,9 @@ public class Docente extends Persona{
         this.facultadPertenece = facultadPertenece;
         this.horasAsignadaClases = horasAsignadaClases;
     }
+    public Docente(String cedula, String nombre, String direccion, String correo){
+        super(cedula, nombre, direccion, correo);
+    }
 
     @Override
     public void mostrarInformacionPersonal() {

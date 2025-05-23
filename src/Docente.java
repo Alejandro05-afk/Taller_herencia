@@ -7,8 +7,10 @@ public class Docente extends Persona{
         this.facultadPertenece = facultadPertenece;
         this.horasAsignadaClases = horasAsignadaClases;
     }
-    public Docente(String cedula, String nombre, String direccion, String correo){
+    public Docente(String cedula, String nombre, String direccion, String correo,String facultadPertenece, int horasAsignadaClases){
         super(cedula, nombre, direccion, correo);
+        this.facultadPertenece = facultadPertenece;
+        this.horasAsignadaClases = horasAsignadaClases;
     }
 
     @Override

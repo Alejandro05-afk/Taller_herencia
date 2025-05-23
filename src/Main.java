@@ -17,8 +17,8 @@ public class Main {
         v1.mostrarInformacionPersonal();
         System.out.print("Edad: " + v1.calcularEdad(2025,2005));
 
-        Docente_linea l1 = new Docente_linea("1725576432","Yadira Lopez","Solanda","yadi@epn.edu.ec","Tiempo completo");
-        System.out.println("--Informacion Docente_linea--");
-        l1.mostrarInformacionPersonal();
+       Docente_linea l1 = new Docente_linea("1725576425","Pepe Perez","Chillogallo","pepe@gmail.com","ESFOT", 20,"Tiempo completo");
+        System.out.println("--Informacion Docente en linea--");
+       l1.mostrarInformacionPersonal();
     }
 }
